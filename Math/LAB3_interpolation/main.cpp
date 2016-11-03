@@ -7,7 +7,7 @@ using namespace std;
 
 inline float q(float x, float x0, float h) { return (x - x0) / h; }
 
-//
+//!
 float** init(int size)
 {
 	float** res;
