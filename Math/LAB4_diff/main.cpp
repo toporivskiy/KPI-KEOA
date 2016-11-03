@@ -39,7 +39,7 @@ void func_runge(double x, double h, int k)
 	cout << "\nАбсолютная погрешность: " << fabs(delta(real, temp)) << endl; // Вывод абсолютной погрешности
 	cout << "Относительная погрешность: " << fabs(epsilon(real, temp)) * 100 << "%" << endl << endl; // Вывод относительной погрешности
 }
-///////////////////
+////////////////////
 
 void main(void)
 {
