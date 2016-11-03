@@ -5,7 +5,6 @@
 // Project for calculate determinant of matrix [nxn]
 //
 
-
 #include <iostream>
 #include <Eigen/Dense>
 
