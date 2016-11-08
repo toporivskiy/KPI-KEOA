@@ -1,6 +1,4 @@
 #include<iostream>
-#include<math.h>
-#include <Windows.h>
 #include <cstdlib> 
 
 #define FUNC(x) 1/pow(x, 2)
