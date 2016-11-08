@@ -8,7 +8,6 @@
 
 using namespace std;
 
-
 float** init(int size);
 float* getZerosLejandr(int);
 float* getKoefsA(int n);
