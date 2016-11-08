@@ -6,6 +6,7 @@
 
 using namespace std;
 
+
 float** init(int size);
 float* getZerosLejandr(int);
 float* getKoefsA(int n);
@@ -63,14 +64,14 @@ int main(int argc, char* argv[])
 	cout << endl << "Результат вычисленный методом: " << DataRes << endl;
 	float trueRes = INTEGRAL(a, b);
 	cout << "Точный результат: " << trueRes << endl;
+	cout << "\nАбсолютная погрешность: " << fabs(delta(trueRes, DataRes)) << endl; // Вывод абсолютной погрешности
+	cout << "Относительная погрешность: " << fabs(epsilon(trueRes, DataRes)) * 100 << "%" << endl << endl; // Вывод относительной погрешности
 	free(Lej);
 	free(KoefsA);
 	free(MatrX);
 	free(MatrY);
 	free(KoefsC);
 	free(KoefsRes);
-	cout << "\nАбсолютная погрешность: " << fabs(delta(trueRes, DataRes)) << endl; // Вывод абсолютной погрешности
-	cout << "Относительная погрешность: " << fabs(epsilon(trueRes, DataRes)) * 100 << "%" << endl << endl; // Вывод относительной погрешности
 	system("pause");
 	return 0;
 }
