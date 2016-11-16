@@ -4,8 +4,6 @@
 
 // ОБЪЯВЛЯЕМ СВОИ ЗНАЧЕНИЯ:
 #define PI 3.14159265359
-#define FUNC(x) 1/pow(x, 2) //Функция
-#define INTEGRAL(a, b) (-1/b)-(-1/a) //Формула для интеграла этой функции
 #define ABSOLUT(xTrue, xFalse) delta(trueRes, DataRes) //Какие переменные для точного значения (trueRes) и расчитаного методом (DataRes)
 #define DELTA(xTrue, xFalse) epsilon(trueRes, DataRes) //Какие переменные для точного значения (trueRes) и расчитаного методом (DataRes)
 
@@ -72,7 +70,7 @@ DataRes = sPryam * countK/countN;
 cout << endl << "Общее количество точек: " << countN << endl;
 cout <<"Количество точек попадающих в круг: " << countK << endl;
 cout << endl << "Результат вычисленный методом: " << DataRes << endl;
-double trueRes = sCircle; 
+double trueRes = sCircle;
 cout << "Точный результат: " << trueRes << endl;
 cout << "\nАбсолютная погрешность: " << ABSOLUT(xTrue, xFalse) << endl; // Вывод абсолютной погрешности
 cout << "Относительная погрешность: " << DELTA(xTrue, xFalse) * 100 << "%" << endl; // Вывод относительной погрешности
